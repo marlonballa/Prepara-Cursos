@@ -22,5 +22,11 @@ namespace CursoDeCSharp_PreparaCursos
             frmConsultorio frmConsultorio = new frmConsultorio();
             frmConsultorio.ShowDialog();
         }
+
+        private void controleDeDespesasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmControleDespesas frmControleDespesas = new frmControleDespesas();
+            frmControleDespesas.ShowDialog();
+        }
     }
 }

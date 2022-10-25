@@ -878,7 +878,7 @@ SELECT ID_CONSULTA, NOME_PACIENTE, NOME_MEDICO, DATA, HORÁRIO FROM Consultas WH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID_CONSULTA, NOME_PACIENTE, NOME_MEDICO, DATA, HORÁRIO FROM dbo.Consultas " +
@@ -891,13 +891,6 @@ SELECT ID_CONSULTA, NOME_PACIENTE, NOME_MEDICO, DATA, HORÁRIO FROM Consultas WH
                 " DESC";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nomeMedico", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "NOME_MEDICO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "SELECT        ID_CONSULTA, NOME_PACIENTE, NOME_MEDICO, DATA, HORÁRIO\r\nFROM       " +
-                "     Consultas\r\nWHERE        (NOME_PACIENTE = @nomePaciente)\r\nORDER BY DATA DESC" +
-                "";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nomePaciente", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "NOME_PACIENTE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -935,23 +928,6 @@ SELECT ID_CONSULTA, NOME_PACIENTE, NOME_MEDICO, DATA, HORÁRIO FROM Consultas WH
             }
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nomeMedico));
-            }
-            ConsultorioDataSet.ConsultasDataTable dataTable = new ConsultorioDataSet.ConsultasDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual ConsultorioDataSet.ConsultasDataTable RetornarPaciente(string nomePaciente) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((nomePaciente == null)) {
-                throw new global::System.ArgumentNullException("nomePaciente");
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(nomePaciente));
             }
             ConsultorioDataSet.ConsultasDataTable dataTable = new ConsultorioDataSet.ConsultasDataTable();
             this.Adapter.Fill(dataTable);

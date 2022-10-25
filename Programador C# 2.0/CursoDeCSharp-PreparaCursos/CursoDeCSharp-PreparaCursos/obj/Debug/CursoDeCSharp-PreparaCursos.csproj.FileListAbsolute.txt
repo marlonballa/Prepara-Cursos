@@ -10,3 +10,4 @@ D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 2.0\CursoDeCSharp-P
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 2.0\CursoDeCSharp-PreparaCursos\CursoDeCSharp-PreparaCursos\obj\Debug\CursoDeCSharp-PreparaCursos.csproj.CoreCompileInputs.cache
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 2.0\CursoDeCSharp-PreparaCursos\CursoDeCSharp-PreparaCursos\obj\Debug\CursoDeCSharp-PreparaCursos.exe
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 2.0\CursoDeCSharp-PreparaCursos\CursoDeCSharp-PreparaCursos\obj\Debug\CursoDeCSharp-PreparaCursos.pdb
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 2.0\CursoDeCSharp-PreparaCursos\CursoDeCSharp-PreparaCursos\obj\Debug\CursoDeCSharp_PreparaCursos.frmControleDespesas.resources

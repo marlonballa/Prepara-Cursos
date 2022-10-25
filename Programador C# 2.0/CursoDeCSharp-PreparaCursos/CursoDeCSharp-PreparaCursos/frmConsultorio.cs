@@ -32,5 +32,17 @@ namespace CursoDeCSharp_PreparaCursos
 
         }
 
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            if (rbMedico.Checked == true)
+            {
+                //Estamos informando que os valores que aparecerão na tabela de resultados de pesquisa, serão os valores provenientes do método: RetornarMedico().
+                dtgPesquisa.DataSource = consultasTableAdapter.RetornarMedico(txtPesquisar.Text);
+            }
+            else
+            {
+                dtgPesquisa.DataSource = consultasTableAdapter.RetornarPaciente(txtPesquisar.Text);
+            }
+        }
     }
 }

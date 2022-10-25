@@ -32,6 +32,9 @@
             this.cEssencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cIntermediárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.atividadeExtraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDeDespesasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pessoaFísicaXPessoaJurídicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +51,8 @@
             // 
             // cEssencialToolStripMenuItem
             // 
+            this.cEssencialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pessoaFísicaXPessoaJurídicaToolStripMenuItem});
             this.cEssencialToolStripMenuItem.Name = "cEssencialToolStripMenuItem";
             this.cEssencialToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.cEssencialToolStripMenuItem.Text = "C# Essencial";
@@ -55,7 +60,8 @@
             // cIntermediárioToolStripMenuItem
             // 
             this.cIntermediárioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.consultórioToolStripMenuItem});
+            this.consultórioToolStripMenuItem,
+            this.atividadeExtraToolStripMenuItem});
             this.cIntermediárioToolStripMenuItem.Name = "cIntermediárioToolStripMenuItem";
             this.cIntermediárioToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
             this.cIntermediárioToolStripMenuItem.Text = "C# Intermediário";
@@ -66,6 +72,27 @@
             this.consultórioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultórioToolStripMenuItem.Text = "Consultório";
             this.consultórioToolStripMenuItem.Click += new System.EventHandler(this.consultórioToolStripMenuItem_Click);
+            // 
+            // atividadeExtraToolStripMenuItem
+            // 
+            this.atividadeExtraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.controleDeDespesasToolStripMenuItem});
+            this.atividadeExtraToolStripMenuItem.Name = "atividadeExtraToolStripMenuItem";
+            this.atividadeExtraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.atividadeExtraToolStripMenuItem.Text = "Atividades Extras";
+            // 
+            // controleDeDespesasToolStripMenuItem
+            // 
+            this.controleDeDespesasToolStripMenuItem.Name = "controleDeDespesasToolStripMenuItem";
+            this.controleDeDespesasToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.controleDeDespesasToolStripMenuItem.Text = "Controle de Despesas";
+            this.controleDeDespesasToolStripMenuItem.Click += new System.EventHandler(this.controleDeDespesasToolStripMenuItem_Click);
+            // 
+            // pessoaFísicaXPessoaJurídicaToolStripMenuItem
+            // 
+            this.pessoaFísicaXPessoaJurídicaToolStripMenuItem.Name = "pessoaFísicaXPessoaJurídicaToolStripMenuItem";
+            this.pessoaFísicaXPessoaJurídicaToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.pessoaFísicaXPessoaJurídicaToolStripMenuItem.Text = "Pessoa Física x Pessoa Jurídica";
             // 
             // frmPrincipal
             // 
@@ -90,6 +117,9 @@
         private System.Windows.Forms.ToolStripMenuItem cEssencialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cIntermediárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultórioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem atividadeExtraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDeDespesasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pessoaFísicaXPessoaJurídicaToolStripMenuItem;
     }
 }
 

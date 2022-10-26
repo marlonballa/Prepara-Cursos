@@ -40,8 +40,6 @@
             this.tbCadastroAlunos = new System.Windows.Forms.TabPage();
             this.alunosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.alunosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.controleEscolarMBDataSet = new ProgramadorCSharp3._0_PreparaCursos.ControleEscolarMBDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -60,6 +58,27 @@
             this.cURSOTextBox = new System.Windows.Forms.TextBox();
             this.nASCIMENTO_ALUNODateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.tpPesquisarAlunos = new System.Windows.Forms.TabPage();
+            this.dtgAlunos = new System.Windows.Forms.DataGridView();
+            this.lblFormaPesquisa = new System.Windows.Forms.Label();
+            this.rbPesquisarPorAluno = new System.Windows.Forms.RadioButton();
+            this.rbPesquisarPorCurso = new System.Windows.Forms.RadioButton();
+            this.txtPesquisaControleEscolar = new System.Windows.Forms.TextBox();
+            this.btnPesquisarAlunos = new System.Windows.Forms.Button();
+            this.dgvAlunosPesquisados = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alunosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.controleEscolarMBDataSet = new ProgramadorCSharp3._0_PreparaCursos.ControleEscolarMBDataSet();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alunosTableAdapter = new ProgramadorCSharp3._0_PreparaCursos.ControleEscolarMBDataSetTableAdapters.AlunosTableAdapter();
             this.tableAdapterManager = new ProgramadorCSharp3._0_PreparaCursos.ControleEscolarMBDataSetTableAdapters.TableAdapterManager();
             lblIdentificadorAluno = new System.Windows.Forms.Label();
@@ -72,6 +91,9 @@
             this.tbCadastroAlunos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.alunosBindingNavigator)).BeginInit();
             this.alunosBindingNavigator.SuspendLayout();
+            this.tpPesquisarAlunos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgAlunos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlunosPesquisados)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.alunosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.controleEscolarMBDataSet)).BeginInit();
             this.SuspendLayout();
@@ -149,6 +171,8 @@
             // 
             // tbCadastroAlunos
             // 
+            this.tbCadastroAlunos.AutoScroll = true;
+            this.tbCadastroAlunos.Controls.Add(this.dtgAlunos);
             this.tbCadastroAlunos.Controls.Add(this.alunosBindingNavigator);
             this.tbCadastroAlunos.Controls.Add(lblIdentificadorAluno);
             this.tbCadastroAlunos.Controls.Add(this.txtIdentificadorAluno);
@@ -162,7 +186,7 @@
             this.tbCadastroAlunos.Controls.Add(this.cURSOTextBox);
             this.tbCadastroAlunos.Controls.Add(lblNascimentoAluno);
             this.tbCadastroAlunos.Controls.Add(this.nASCIMENTO_ALUNODateTimePicker);
-            this.tbCadastroAlunos.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCadastroAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbCadastroAlunos.Location = new System.Drawing.Point(4, 22);
             this.tbCadastroAlunos.Name = "tbCadastroAlunos";
             this.tbCadastroAlunos.Padding = new System.Windows.Forms.Padding(3);
@@ -211,16 +235,6 @@
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Adicionar novo";
             // 
-            // alunosBindingSource
-            // 
-            this.alunosBindingSource.DataMember = "Alunos";
-            this.alunosBindingSource.DataSource = this.controleEscolarMBDataSet;
-            // 
-            // controleEscolarMBDataSet
-            // 
-            this.controleEscolarMBDataSet.DataSetName = "ControleEscolarMBDataSet";
-            this.controleEscolarMBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
@@ -264,6 +278,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -364,6 +379,12 @@
             // 
             // tpPesquisarAlunos
             // 
+            this.tpPesquisarAlunos.Controls.Add(this.dgvAlunosPesquisados);
+            this.tpPesquisarAlunos.Controls.Add(this.btnPesquisarAlunos);
+            this.tpPesquisarAlunos.Controls.Add(this.txtPesquisaControleEscolar);
+            this.tpPesquisarAlunos.Controls.Add(this.rbPesquisarPorCurso);
+            this.tpPesquisarAlunos.Controls.Add(this.rbPesquisarPorAluno);
+            this.tpPesquisarAlunos.Controls.Add(this.lblFormaPesquisa);
             this.tpPesquisarAlunos.Location = new System.Drawing.Point(4, 22);
             this.tpPesquisarAlunos.Name = "tpPesquisarAlunos";
             this.tpPesquisarAlunos.Padding = new System.Windows.Forms.Padding(3);
@@ -371,6 +392,200 @@
             this.tpPesquisarAlunos.TabIndex = 1;
             this.tpPesquisarAlunos.Text = "Pesquisar Alunos";
             this.tpPesquisarAlunos.UseVisualStyleBackColor = true;
+            // 
+            // dtgAlunos
+            // 
+            this.dtgAlunos.AllowUserToAddRows = false;
+            this.dtgAlunos.AllowUserToDeleteRows = false;
+            this.dtgAlunos.AutoGenerateColumns = false;
+            this.dtgAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgAlunos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.dtgAlunos.DataSource = this.alunosBindingSource;
+            this.dtgAlunos.Location = new System.Drawing.Point(11, 88);
+            this.dtgAlunos.Name = "dtgAlunos";
+            this.dtgAlunos.ReadOnly = true;
+            this.dtgAlunos.RowHeadersVisible = false;
+            this.dtgAlunos.Size = new System.Drawing.Size(983, 423);
+            this.dtgAlunos.TabIndex = 13;
+            // 
+            // lblFormaPesquisa
+            // 
+            this.lblFormaPesquisa.AutoSize = true;
+            this.lblFormaPesquisa.Location = new System.Drawing.Point(8, 14);
+            this.lblFormaPesquisa.Name = "lblFormaPesquisa";
+            this.lblFormaPesquisa.Size = new System.Drawing.Size(146, 13);
+            this.lblFormaPesquisa.TabIndex = 0;
+            this.lblFormaPesquisa.Text = "Escolha a forma de pesquisa:";
+            // 
+            // rbPesquisarPorAluno
+            // 
+            this.rbPesquisarPorAluno.AutoSize = true;
+            this.rbPesquisarPorAluno.Location = new System.Drawing.Point(11, 30);
+            this.rbPesquisarPorAluno.Name = "rbPesquisarPorAluno";
+            this.rbPesquisarPorAluno.Size = new System.Drawing.Size(52, 17);
+            this.rbPesquisarPorAluno.TabIndex = 1;
+            this.rbPesquisarPorAluno.Text = "Aluno";
+            this.rbPesquisarPorAluno.UseVisualStyleBackColor = true;
+            // 
+            // rbPesquisarPorCurso
+            // 
+            this.rbPesquisarPorCurso.AutoSize = true;
+            this.rbPesquisarPorCurso.Checked = true;
+            this.rbPesquisarPorCurso.Location = new System.Drawing.Point(102, 30);
+            this.rbPesquisarPorCurso.Name = "rbPesquisarPorCurso";
+            this.rbPesquisarPorCurso.Size = new System.Drawing.Size(52, 17);
+            this.rbPesquisarPorCurso.TabIndex = 1;
+            this.rbPesquisarPorCurso.TabStop = true;
+            this.rbPesquisarPorCurso.Text = "Curso";
+            this.rbPesquisarPorCurso.UseVisualStyleBackColor = true;
+            // 
+            // txtPesquisaControleEscolar
+            // 
+            this.txtPesquisaControleEscolar.Location = new System.Drawing.Point(11, 54);
+            this.txtPesquisaControleEscolar.Name = "txtPesquisaControleEscolar";
+            this.txtPesquisaControleEscolar.Size = new System.Drawing.Size(835, 20);
+            this.txtPesquisaControleEscolar.TabIndex = 2;
+            // 
+            // btnPesquisarAlunos
+            // 
+            this.btnPesquisarAlunos.Location = new System.Drawing.Point(852, 53);
+            this.btnPesquisarAlunos.Name = "btnPesquisarAlunos";
+            this.btnPesquisarAlunos.Size = new System.Drawing.Size(142, 23);
+            this.btnPesquisarAlunos.TabIndex = 3;
+            this.btnPesquisarAlunos.Text = "Pesquisar";
+            this.btnPesquisarAlunos.UseVisualStyleBackColor = true;
+            this.btnPesquisarAlunos.Click += new System.EventHandler(this.btnPesquisarAlunos_Click);
+            // 
+            // dgvAlunosPesquisados
+            // 
+            this.dgvAlunosPesquisados.AllowUserToAddRows = false;
+            this.dgvAlunosPesquisados.AllowUserToDeleteRows = false;
+            this.dgvAlunosPesquisados.AutoGenerateColumns = false;
+            this.dgvAlunosPesquisados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAlunosPesquisados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
+            this.dgvAlunosPesquisados.DataSource = this.alunosBindingSource;
+            this.dgvAlunosPesquisados.Location = new System.Drawing.Point(11, 82);
+            this.dgvAlunosPesquisados.Name = "dgvAlunosPesquisados";
+            this.dgvAlunosPesquisados.ReadOnly = true;
+            this.dgvAlunosPesquisados.RowHeadersVisible = false;
+            this.dgvAlunosPesquisados.Size = new System.Drawing.Size(983, 423);
+            this.dgvAlunosPesquisados.TabIndex = 14;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_ALUNO";
+            this.dataGridViewTextBoxColumn1.Frozen = true;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Identificador";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NOME_ALUNO";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome do Aluno";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 400;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "TELEFONE_ALUNO";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Telefone:";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "EMAIL_ALUNO";
+            this.dataGridViewTextBoxColumn4.HeaderText = "E-mail:";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "CURSO";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Curso:";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "NASCIMENTO_ALUNO";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Data de Nascimento:";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // alunosBindingSource
+            // 
+            this.alunosBindingSource.DataMember = "Alunos";
+            this.alunosBindingSource.DataSource = this.controleEscolarMBDataSet;
+            // 
+            // controleEscolarMBDataSet
+            // 
+            this.controleEscolarMBDataSet.DataSetName = "ControleEscolarMBDataSet";
+            this.controleEscolarMBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "ID_ALUNO";
+            this.dataGridViewTextBoxColumn7.Frozen = true;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Identificador";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "NOME_ALUNO";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Nome do Aluno";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 400;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "TELEFONE_ALUNO";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Telefone:";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "EMAIL_ALUNO";
+            this.dataGridViewTextBoxColumn10.HeaderText = "E-mail:";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "CURSO";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Curso:";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "NASCIMENTO_ALUNO";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Data de Nascimento:";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
             // alunosTableAdapter
             // 
@@ -400,6 +615,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.alunosBindingNavigator)).EndInit();
             this.alunosBindingNavigator.ResumeLayout(false);
             this.alunosBindingNavigator.PerformLayout();
+            this.tpPesquisarAlunos.ResumeLayout(false);
+            this.tpPesquisarAlunos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgAlunos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAlunosPesquisados)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.alunosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.controleEscolarMBDataSet)).EndInit();
             this.ResumeLayout(false);
@@ -434,5 +653,24 @@
         private System.Windows.Forms.TextBox eMAIL_ALUNOTextBox;
         private System.Windows.Forms.TextBox cURSOTextBox;
         private System.Windows.Forms.DateTimePicker nASCIMENTO_ALUNODateTimePicker;
+        private System.Windows.Forms.DataGridView dtgAlunos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.Button btnPesquisarAlunos;
+        private System.Windows.Forms.TextBox txtPesquisaControleEscolar;
+        private System.Windows.Forms.RadioButton rbPesquisarPorCurso;
+        private System.Windows.Forms.RadioButton rbPesquisarPorAluno;
+        private System.Windows.Forms.Label lblFormaPesquisa;
+        private System.Windows.Forms.DataGridView dgvAlunosPesquisados;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
     }
 }

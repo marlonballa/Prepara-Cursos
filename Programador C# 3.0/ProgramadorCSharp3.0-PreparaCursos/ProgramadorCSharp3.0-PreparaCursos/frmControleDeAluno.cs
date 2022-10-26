@@ -31,5 +31,11 @@ namespace ProgramadorCSharp3._0_PreparaCursos
             this.alunosTableAdapter.Fill(this.controleEscolarMBDataSet.Alunos);
 
         }
+
+        private void btnPesquisarAlunos_Click(object sender, EventArgs e)
+        {
+            if (rbPesquisarPorAluno.Checked == true) { dgvAlunosPesquisados.DataSource = alunosTableAdapter.RetornarAluno(txtPesquisaControleEscolar.Text); }
+            else { dgvAlunosPesquisados.DataSource = alunosTableAdapter.RetornarCurso(txtPesquisaControleEscolar.Text); }
+        }
     }
 }

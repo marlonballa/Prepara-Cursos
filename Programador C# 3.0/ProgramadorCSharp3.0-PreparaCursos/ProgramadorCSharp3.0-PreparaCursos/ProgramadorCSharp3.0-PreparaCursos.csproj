@@ -51,6 +51,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ControleDespesasMBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ControleEscolarMBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControleEscolarMBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmControleDeAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControleDeAluno.Designer.cs">
+      <DependentUpon>frmControleDeAluno.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +90,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Consultorio_2_0DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmControleDeAluno.resx">
+      <DependentUpon>frmControleDeAluno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultorio.resx">
       <DependentUpon>frmConsultorio.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +121,17 @@
     </None>
     <None Include="ControleDespesasMBDataSet.xss">
       <DependentUpon>ControleDespesasMBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControleEscolarMBDataSet.xsc">
+      <DependentUpon>ControleEscolarMBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControleEscolarMBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControleEscolarMBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControleEscolarMBDataSet.xss">
+      <DependentUpon>ControleEscolarMBDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

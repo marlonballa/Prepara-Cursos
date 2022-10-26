@@ -11,3 +11,4 @@ D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSha
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.pdb
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmConsultorio.resources
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDespesas.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDeAluno.resources

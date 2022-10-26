@@ -39,5 +39,11 @@ namespace ProgramadorCSharp3._0_PreparaCursos
             this.consultasTableAdapter.Fill(this._Consultorio_2_0DataSet.Consultas);
 
         }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+            if (rbPesquisarPaciente.Checked == true) { dtgPesquisaConsultas.DataSource = consultasTableAdapter.RetornaPaciente(txtPesquisar.Text); }
+            else { dtgPesquisaConsultas.DataSource = consultasTableAdapter.RetornaMedico(txtPesquisar.Text); }
+        }
     }
 }

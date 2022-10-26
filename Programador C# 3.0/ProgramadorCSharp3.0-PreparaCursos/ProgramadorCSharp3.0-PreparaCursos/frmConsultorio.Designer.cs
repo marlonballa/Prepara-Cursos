@@ -66,7 +66,7 @@
             this.dATADateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txtNomeMedico = new System.Windows.Forms.TextBox();
             this.tpPesquisar = new System.Windows.Forms.TabPage();
-            this.dtgPesquisa = new System.Windows.Forms.DataGridView();
+            this.dtgPesquisaConsultas = new System.Windows.Forms.DataGridView();
             this.IDENTIFICADOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_MEDICO = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,8 +74,8 @@
             this.HORARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.lblPesquisarPaciente = new System.Windows.Forms.RadioButton();
-            this.lblPesquisarMedico = new System.Windows.Forms.RadioButton();
+            this.rbPesquisarPaciente = new System.Windows.Forms.RadioButton();
+            this.rbPesquisarMedico = new System.Windows.Forms.RadioButton();
             this.consultasTableAdapter = new ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSetTableAdapters.ConsultasTableAdapter();
             this.tableAdapterManager = new ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSetTableAdapters.TableAdapterManager();
             lblConsulta = new System.Windows.Forms.Label();
@@ -91,7 +91,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.consultasBindingNavigator)).BeginInit();
             this.consultasBindingNavigator.SuspendLayout();
             this.tpPesquisar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisaConsultas)).BeginInit();
             this.SuspendLayout();
             // 
             // lblConsulta
@@ -330,6 +330,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -418,11 +419,11 @@
             // 
             // tpPesquisar
             // 
-            this.tpPesquisar.Controls.Add(this.dtgPesquisa);
+            this.tpPesquisar.Controls.Add(this.dtgPesquisaConsultas);
             this.tpPesquisar.Controls.Add(this.btnPesquisar);
             this.tpPesquisar.Controls.Add(this.txtPesquisar);
-            this.tpPesquisar.Controls.Add(this.lblPesquisarPaciente);
-            this.tpPesquisar.Controls.Add(this.lblPesquisarMedico);
+            this.tpPesquisar.Controls.Add(this.rbPesquisarPaciente);
+            this.tpPesquisar.Controls.Add(this.rbPesquisarMedico);
             this.tpPesquisar.Location = new System.Drawing.Point(4, 22);
             this.tpPesquisar.Name = "tpPesquisar";
             this.tpPesquisar.Padding = new System.Windows.Forms.Padding(3);
@@ -431,23 +432,23 @@
             this.tpPesquisar.Text = "Pesquisar Consultas";
             this.tpPesquisar.UseVisualStyleBackColor = true;
             // 
-            // dtgPesquisa
+            // dtgPesquisaConsultas
             // 
-            this.dtgPesquisa.AllowUserToAddRows = false;
-            this.dtgPesquisa.AllowUserToDeleteRows = false;
-            this.dtgPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgPesquisa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgPesquisaConsultas.AllowUserToAddRows = false;
+            this.dtgPesquisaConsultas.AllowUserToDeleteRows = false;
+            this.dtgPesquisaConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgPesquisaConsultas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDENTIFICADOR,
             this.NOME_PACIENTE,
             this.NOME_MEDICO,
             this.DATA,
             this.HORARIO});
-            this.dtgPesquisa.Location = new System.Drawing.Point(8, 80);
-            this.dtgPesquisa.Name = "dtgPesquisa";
-            this.dtgPesquisa.ReadOnly = true;
-            this.dtgPesquisa.RowHeadersVisible = false;
-            this.dtgPesquisa.Size = new System.Drawing.Size(984, 423);
-            this.dtgPesquisa.TabIndex = 3;
+            this.dtgPesquisaConsultas.Location = new System.Drawing.Point(8, 80);
+            this.dtgPesquisaConsultas.Name = "dtgPesquisaConsultas";
+            this.dtgPesquisaConsultas.ReadOnly = true;
+            this.dtgPesquisaConsultas.RowHeadersVisible = false;
+            this.dtgPesquisaConsultas.Size = new System.Drawing.Size(984, 423);
+            this.dtgPesquisaConsultas.TabIndex = 3;
             // 
             // IDENTIFICADOR
             // 
@@ -497,6 +498,7 @@
             this.btnPesquisar.TabIndex = 2;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // txtPesquisar
             // 
@@ -505,27 +507,27 @@
             this.txtPesquisar.Size = new System.Drawing.Size(861, 20);
             this.txtPesquisar.TabIndex = 1;
             // 
-            // lblPesquisarPaciente
+            // rbPesquisarPaciente
             // 
-            this.lblPesquisarPaciente.AutoSize = true;
-            this.lblPesquisarPaciente.Location = new System.Drawing.Point(120, 21);
-            this.lblPesquisarPaciente.Name = "lblPesquisarPaciente";
-            this.lblPesquisarPaciente.Size = new System.Drawing.Size(113, 17);
-            this.lblPesquisarPaciente.TabIndex = 0;
-            this.lblPesquisarPaciente.TabStop = true;
-            this.lblPesquisarPaciente.Text = "Nome do Paciente";
-            this.lblPesquisarPaciente.UseVisualStyleBackColor = true;
+            this.rbPesquisarPaciente.AutoSize = true;
+            this.rbPesquisarPaciente.Location = new System.Drawing.Point(120, 21);
+            this.rbPesquisarPaciente.Name = "rbPesquisarPaciente";
+            this.rbPesquisarPaciente.Size = new System.Drawing.Size(113, 17);
+            this.rbPesquisarPaciente.TabIndex = 0;
+            this.rbPesquisarPaciente.TabStop = true;
+            this.rbPesquisarPaciente.Text = "Nome do Paciente";
+            this.rbPesquisarPaciente.UseVisualStyleBackColor = true;
             // 
-            // lblPesquisarMedico
+            // rbPesquisarMedico
             // 
-            this.lblPesquisarMedico.AutoSize = true;
-            this.lblPesquisarMedico.Location = new System.Drawing.Point(8, 21);
-            this.lblPesquisarMedico.Name = "lblPesquisarMedico";
-            this.lblPesquisarMedico.Size = new System.Drawing.Size(106, 17);
-            this.lblPesquisarMedico.TabIndex = 0;
-            this.lblPesquisarMedico.TabStop = true;
-            this.lblPesquisarMedico.Text = "Nome do Médico";
-            this.lblPesquisarMedico.UseVisualStyleBackColor = true;
+            this.rbPesquisarMedico.AutoSize = true;
+            this.rbPesquisarMedico.Location = new System.Drawing.Point(8, 21);
+            this.rbPesquisarMedico.Name = "rbPesquisarMedico";
+            this.rbPesquisarMedico.Size = new System.Drawing.Size(106, 17);
+            this.rbPesquisarMedico.TabIndex = 0;
+            this.rbPesquisarMedico.TabStop = true;
+            this.rbPesquisarMedico.Text = "Nome do Médico";
+            this.rbPesquisarMedico.UseVisualStyleBackColor = true;
             // 
             // consultasTableAdapter
             // 
@@ -559,7 +561,7 @@
             this.consultasBindingNavigator.PerformLayout();
             this.tpPesquisar.ResumeLayout(false);
             this.tpPesquisar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisaConsultas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -599,9 +601,9 @@
         private System.Windows.Forms.TextBox txtNomeMedico;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtPesquisar;
-        private System.Windows.Forms.RadioButton lblPesquisarMedico;
-        private System.Windows.Forms.RadioButton lblPesquisarPaciente;
-        private System.Windows.Forms.DataGridView dtgPesquisa;
+        private System.Windows.Forms.RadioButton rbPesquisarMedico;
+        private System.Windows.Forms.RadioButton rbPesquisarPaciente;
+        private System.Windows.Forms.DataGridView dtgPesquisaConsultas;
         private System.Windows.Forms.DataGridViewTextBoxColumn IDENTIFICADOR;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOME_MEDICO;

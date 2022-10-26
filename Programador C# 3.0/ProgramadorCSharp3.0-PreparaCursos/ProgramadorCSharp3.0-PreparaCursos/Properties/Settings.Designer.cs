@@ -44,5 +44,16 @@ namespace ProgramadorCSharp3._0_PreparaCursos.Properties {
                 return ((string)(this["ControleDespesasMBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ControleEscolarMB;Integrated Sec" +
+            "urity=True;Pooling=False")]
+        public string ControleEscolarMBConnectionString {
+            get {
+                return ((string)(this["ControleEscolarMBConnectionString"]));
+            }
+        }
     }
 }

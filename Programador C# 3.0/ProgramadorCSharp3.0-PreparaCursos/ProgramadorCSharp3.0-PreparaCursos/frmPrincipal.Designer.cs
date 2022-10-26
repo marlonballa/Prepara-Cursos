@@ -39,6 +39,7 @@
             this.cAvançadoIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAvançadoIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.controleDeAlunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +75,7 @@
             // 
             this.cIntermediárioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultórioToolStripMenuItem,
+            this.controleDeAlunosToolStripMenuItem,
             this.atividadesExtrasToolStripMenuItem});
             this.cIntermediárioToolStripMenuItem.Name = "cIntermediárioToolStripMenuItem";
             this.cIntermediárioToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
@@ -123,6 +125,13 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // controleDeAlunosToolStripMenuItem
+            // 
+            this.controleDeAlunosToolStripMenuItem.Name = "controleDeAlunosToolStripMenuItem";
+            this.controleDeAlunosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.controleDeAlunosToolStripMenuItem.Text = "Controle de Alunos";
+            this.controleDeAlunosToolStripMenuItem.Click += new System.EventHandler(this.controleDeAlunosToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +140,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "frmPrincipal";
@@ -156,6 +166,7 @@
         private System.Windows.Forms.ToolStripMenuItem cAvançadoIIToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem calculadoraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDeAlunosToolStripMenuItem;
     }
 }
 

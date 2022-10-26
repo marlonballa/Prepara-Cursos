@@ -28,5 +28,11 @@ namespace ProgramadorCSharp3._0_PreparaCursos
             frmControleDespesas frmControleDespesas = new frmControleDespesas();
             frmControleDespesas.ShowDialog();   
         }
+
+        private void controleDeAlunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmControleDeAluno frmControleDeAluno = new frmControleDeAluno();
+            frmControleDeAluno.ShowDialog();
+        }
     }
 }

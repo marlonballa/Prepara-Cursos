@@ -46,11 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControleDespesasMBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControleDespesasMBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultorio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmConsultorio.Designer.cs">
       <DependentUpon>frmConsultorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmControleDespesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControleDespesas.Designer.cs">
+      <DependentUpon>frmControleDespesas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -71,6 +82,9 @@
     <EmbeddedResource Include="frmConsultorio.resx">
       <DependentUpon>frmConsultorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmControleDespesas.resx">
+      <DependentUpon>frmControleDespesas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +97,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ControleDespesasMBDataSet.xsc">
+      <DependentUpon>ControleDespesasMBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ControleDespesasMBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControleDespesasMBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControleDespesasMBDataSet.xss">
+      <DependentUpon>ControleDespesasMBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

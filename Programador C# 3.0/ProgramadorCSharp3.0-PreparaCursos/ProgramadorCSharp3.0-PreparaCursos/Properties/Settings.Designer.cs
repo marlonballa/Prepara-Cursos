@@ -33,5 +33,16 @@ namespace ProgramadorCSharp3._0_PreparaCursos.Properties {
                 return ((string)(this["Consultorio_2_0ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=localhost\\SQLEXPRESS;Initial Catalog=ControleDespesasMB;Integrated Se" +
+            "curity=True;Pooling=False")]
+        public string ControleDespesasMBConnectionString {
+            get {
+                return ((string)(this["ControleDespesasMBConnectionString"]));
+            }
+        }
     }
 }

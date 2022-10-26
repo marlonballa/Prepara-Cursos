@@ -34,12 +34,19 @@
             System.Windows.Forms.Label lblNomeMedico;
             System.Windows.Forms.Label lblDataConsulta;
             System.Windows.Forms.Label lblHorarioConsulta;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultorio));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConsultorio));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tpConsultas = new System.Windows.Forms.TabPage();
             this.dgvConsultas = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.consultasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._Consultorio_2_0DataSet = new ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSet();
             this.consultasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -59,25 +66,18 @@
             this.dATADateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txtNomeMedico = new System.Windows.Forms.TextBox();
             this.tpPesquisar = new System.Windows.Forms.TabPage();
-            this.lblPesquisarMedico = new System.Windows.Forms.RadioButton();
-            this.txtPesquisar = new System.Windows.Forms.TextBox();
-            this.btnPesquisar = new System.Windows.Forms.Button();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.consultasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._Consultorio_2_0DataSet = new ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSet();
-            this.consultasTableAdapter = new ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSetTableAdapters.ConsultasTableAdapter();
-            this.tableAdapterManager = new ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSetTableAdapters.TableAdapterManager();
-            this.lblPesquisarPaciente = new System.Windows.Forms.RadioButton();
             this.dtgPesquisa = new System.Windows.Forms.DataGridView();
             this.IDENTIFICADOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NOME_MEDICO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DATA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPesquisar = new System.Windows.Forms.Button();
+            this.txtPesquisar = new System.Windows.Forms.TextBox();
+            this.lblPesquisarPaciente = new System.Windows.Forms.RadioButton();
+            this.lblPesquisarMedico = new System.Windows.Forms.RadioButton();
+            this.consultasTableAdapter = new ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSetTableAdapters.ConsultasTableAdapter();
+            this.tableAdapterManager = new ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSetTableAdapters.TableAdapterManager();
             lblConsulta = new System.Windows.Forms.Label();
             lblNomePaciente = new System.Windows.Forms.Label();
             lblNomeMedico = new System.Windows.Forms.Label();
@@ -86,11 +86,11 @@
             this.tabControl1.SuspendLayout();
             this.tpConsultas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consultasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._Consultorio_2_0DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultasBindingNavigator)).BeginInit();
             this.consultasBindingNavigator.SuspendLayout();
             this.tpPesquisar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.consultasBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._Consultorio_2_0DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,6 +192,61 @@
             this.dgvConsultas.Size = new System.Drawing.Size(978, 421);
             this.dgvConsultas.TabIndex = 11;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_CONSULTA";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Consulta Número:";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "NOME_PACIENTE";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome do Paciente:";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 364;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "NOME_MEDICO";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Nome do Médico:";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 364;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "DATA";
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = null;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Data:";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 75;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "HORÁRIO";
+            dataGridViewCellStyle2.Format = "t";
+            dataGridViewCellStyle2.NullValue = null;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Horário:";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 75;
+            // 
+            // consultasBindingSource
+            // 
+            this.consultasBindingSource.DataMember = "Consultas";
+            this.consultasBindingSource.DataSource = this._Consultorio_2_0DataSet;
+            // 
+            // _Consultorio_2_0DataSet
+            // 
+            this._Consultorio_2_0DataSet.DataSetName = "_Consultorio_2_0DataSet";
+            this._Consultorio_2_0DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // consultasBindingNavigator
             // 
             this.consultasBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
@@ -275,7 +330,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posição";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -329,8 +383,9 @@
             // 
             // hORÁRIODateTimePicker
             // 
+            this.hORÁRIODateTimePicker.CustomFormat = "HH:mm";
             this.hORÁRIODateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.consultasBindingSource, "HORÁRIO", true));
-            this.hORÁRIODateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.hORÁRIODateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.hORÁRIODateTimePicker.Location = new System.Drawing.Point(736, 56);
             this.hORÁRIODateTimePicker.Name = "hORÁRIODateTimePicker";
             this.hORÁRIODateTimePicker.Size = new System.Drawing.Size(79, 20);
@@ -375,109 +430,6 @@
             this.tpPesquisar.TabIndex = 1;
             this.tpPesquisar.Text = "Pesquisar Consultas";
             this.tpPesquisar.UseVisualStyleBackColor = true;
-            // 
-            // lblPesquisarMedico
-            // 
-            this.lblPesquisarMedico.AutoSize = true;
-            this.lblPesquisarMedico.Location = new System.Drawing.Point(8, 21);
-            this.lblPesquisarMedico.Name = "lblPesquisarMedico";
-            this.lblPesquisarMedico.Size = new System.Drawing.Size(106, 17);
-            this.lblPesquisarMedico.TabIndex = 0;
-            this.lblPesquisarMedico.TabStop = true;
-            this.lblPesquisarMedico.Text = "Nome do Médico";
-            this.lblPesquisarMedico.UseVisualStyleBackColor = true;
-            // 
-            // txtPesquisar
-            // 
-            this.txtPesquisar.Location = new System.Drawing.Point(8, 44);
-            this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(861, 20);
-            this.txtPesquisar.TabIndex = 1;
-            // 
-            // btnPesquisar
-            // 
-            this.btnPesquisar.Location = new System.Drawing.Point(875, 44);
-            this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(117, 23);
-            this.btnPesquisar.TabIndex = 2;
-            this.btnPesquisar.Text = "Pesquisar";
-            this.btnPesquisar.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID_CONSULTA";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Consulta Número:";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "NOME_PACIENTE";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome do Paciente:";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 364;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "NOME_MEDICO";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Nome do Médico:";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 364;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "DATA";
-            dataGridViewCellStyle1.Format = "d";
-            dataGridViewCellStyle1.NullValue = null;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Data:";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 75;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "HORÁRIO";
-            dataGridViewCellStyle2.Format = "t";
-            dataGridViewCellStyle2.NullValue = null;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Horário:";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 75;
-            // 
-            // consultasBindingSource
-            // 
-            this.consultasBindingSource.DataMember = "Consultas";
-            this.consultasBindingSource.DataSource = this._Consultorio_2_0DataSet;
-            // 
-            // _Consultorio_2_0DataSet
-            // 
-            this._Consultorio_2_0DataSet.DataSetName = "_Consultorio_2_0DataSet";
-            this._Consultorio_2_0DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // consultasTableAdapter
-            // 
-            this.consultasTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.ConsultasTableAdapter = this.consultasTableAdapter;
-            this.tableAdapterManager.UpdateOrder = ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // lblPesquisarPaciente
-            // 
-            this.lblPesquisarPaciente.AutoSize = true;
-            this.lblPesquisarPaciente.Location = new System.Drawing.Point(120, 21);
-            this.lblPesquisarPaciente.Name = "lblPesquisarPaciente";
-            this.lblPesquisarPaciente.Size = new System.Drawing.Size(113, 17);
-            this.lblPesquisarPaciente.TabIndex = 0;
-            this.lblPesquisarPaciente.TabStop = true;
-            this.lblPesquisarPaciente.Text = "Nome do Paciente";
-            this.lblPesquisarPaciente.UseVisualStyleBackColor = true;
             // 
             // dtgPesquisa
             // 
@@ -537,6 +489,54 @@
             this.HORARIO.ReadOnly = true;
             this.HORARIO.Width = 75;
             // 
+            // btnPesquisar
+            // 
+            this.btnPesquisar.Location = new System.Drawing.Point(875, 44);
+            this.btnPesquisar.Name = "btnPesquisar";
+            this.btnPesquisar.Size = new System.Drawing.Size(117, 23);
+            this.btnPesquisar.TabIndex = 2;
+            this.btnPesquisar.Text = "Pesquisar";
+            this.btnPesquisar.UseVisualStyleBackColor = true;
+            // 
+            // txtPesquisar
+            // 
+            this.txtPesquisar.Location = new System.Drawing.Point(8, 44);
+            this.txtPesquisar.Name = "txtPesquisar";
+            this.txtPesquisar.Size = new System.Drawing.Size(861, 20);
+            this.txtPesquisar.TabIndex = 1;
+            // 
+            // lblPesquisarPaciente
+            // 
+            this.lblPesquisarPaciente.AutoSize = true;
+            this.lblPesquisarPaciente.Location = new System.Drawing.Point(120, 21);
+            this.lblPesquisarPaciente.Name = "lblPesquisarPaciente";
+            this.lblPesquisarPaciente.Size = new System.Drawing.Size(113, 17);
+            this.lblPesquisarPaciente.TabIndex = 0;
+            this.lblPesquisarPaciente.TabStop = true;
+            this.lblPesquisarPaciente.Text = "Nome do Paciente";
+            this.lblPesquisarPaciente.UseVisualStyleBackColor = true;
+            // 
+            // lblPesquisarMedico
+            // 
+            this.lblPesquisarMedico.AutoSize = true;
+            this.lblPesquisarMedico.Location = new System.Drawing.Point(8, 21);
+            this.lblPesquisarMedico.Name = "lblPesquisarMedico";
+            this.lblPesquisarMedico.Size = new System.Drawing.Size(106, 17);
+            this.lblPesquisarMedico.TabIndex = 0;
+            this.lblPesquisarMedico.TabStop = true;
+            this.lblPesquisarMedico.Text = "Nome do Médico";
+            this.lblPesquisarMedico.UseVisualStyleBackColor = true;
+            // 
+            // consultasTableAdapter
+            // 
+            this.consultasTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.ConsultasTableAdapter = this.consultasTableAdapter;
+            this.tableAdapterManager.UpdateOrder = ProgramadorCSharp3._0_PreparaCursos._Consultorio_2_0DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
             // frmConsultorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -552,13 +552,13 @@
             this.tpConsultas.ResumeLayout(false);
             this.tpConsultas.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consultasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._Consultorio_2_0DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultasBindingNavigator)).EndInit();
             this.consultasBindingNavigator.ResumeLayout(false);
             this.consultasBindingNavigator.PerformLayout();
             this.tpPesquisar.ResumeLayout(false);
             this.tpPesquisar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.consultasBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._Consultorio_2_0DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPesquisa)).EndInit();
             this.ResumeLayout(false);
 

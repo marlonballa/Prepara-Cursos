@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgendaContatosMB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgendaContatosMB.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ControleDespesasMBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +88,12 @@
     <Compile Include="frmControleDespesas.Designer.cs">
       <DependentUpon>frmControleDespesas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMeusContatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeusContatos.Designer.cs">
+      <DependentUpon>frmMeusContatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +119,9 @@
     <EmbeddedResource Include="frmControleDespesas.resx">
       <DependentUpon>frmControleDespesas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMeusContatos.resx">
+      <DependentUpon>frmMeusContatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +134,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="AgendaContatosMB.xsc">
+      <DependentUpon>AgendaContatosMB.xsd</DependentUpon>
+    </None>
+    <None Include="AgendaContatosMB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgendaContatosMB.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgendaContatosMB.xss">
+      <DependentUpon>AgendaContatosMB.xsd</DependentUpon>
+    </None>
     <None Include="ControleDespesasMBDataSet.xsc">
       <DependentUpon>ControleDespesasMBDataSet.xsd</DependentUpon>
     </None>
@@ -133,6 +167,7 @@
     <None Include="ControleEscolarMBDataSet.xss">
       <DependentUpon>ControleEscolarMBDataSet.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

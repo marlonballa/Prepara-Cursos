@@ -34,5 +34,11 @@ namespace ProgramadorCSharp3._0_PreparaCursos
             frmControleDeAluno frmControleDeAluno = new frmControleDeAluno();
             frmControleDeAluno.ShowDialog();
         }
+
+        private void meusContatosAgendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMeusContatos frmMeusContatos = new frmMeusContatos();
+            frmMeusContatos.ShowDialog();
+        }
     }
 }

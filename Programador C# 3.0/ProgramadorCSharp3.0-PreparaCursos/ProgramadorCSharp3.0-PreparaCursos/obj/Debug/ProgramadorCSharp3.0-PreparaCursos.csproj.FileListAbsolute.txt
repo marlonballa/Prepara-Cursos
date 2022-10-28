@@ -12,3 +12,27 @@ D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSha
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmConsultorio.resources
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDespesas.resources
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDeAluno.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\ProgramadorCSharp3.0-PreparaCursos.exe.config
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\ProgramadorCSharp3.0-PreparaCursos.exe
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\ProgramadorCSharp3.0-PreparaCursos.pdb
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.csproj.AssemblyReference.cache
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.csproj.SuggestedBindingRedirects.cache
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDeAluno.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmConsultorio.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDespesas.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmMeusContatos.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmPrincipal.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.Properties.Resources.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.csproj.GenerateResource.cache
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.csproj.CoreCompileInputs.cache
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.exe
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.pdb
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\MetroFramework.Design.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\MetroFramework.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\MetroFramework.Fonts.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara-Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.csproj.CopyComplete
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\MetroFramework.Design.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\MetroFramework.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\MetroFramework.Fonts.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmMeusContatos.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.csproj.CopyComplete

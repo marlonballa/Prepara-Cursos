@@ -36,3 +36,5 @@ D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSha
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\MetroFramework.Fonts.dll
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmMeusContatos.resources
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.csproj.CopyComplete
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDeConsultorio.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmCadastroMedicos.resources

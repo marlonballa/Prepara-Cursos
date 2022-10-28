@@ -60,6 +60,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AgendaContatosMB.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ControleDeConsultorioMB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControleDeConsultorioMB.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ControleDespesasMBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -82,11 +87,23 @@
     <Compile Include="frmConsultorio.Designer.cs">
       <DependentUpon>frmConsultorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmControleDeConsultorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControleDeConsultorio.Designer.cs">
+      <DependentUpon>frmControleDeConsultorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmControleDespesas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmControleDespesas.Designer.cs">
       <DependentUpon>frmControleDespesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedicos.Designer.cs">
+      <DependentUpon>frmMedicos.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMeusContatos.cs">
       <SubType>Form</SubType>
@@ -116,8 +133,14 @@
     <EmbeddedResource Include="frmConsultorio.resx">
       <DependentUpon>frmConsultorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmControleDeConsultorio.resx">
+      <DependentUpon>frmControleDeConsultorio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmControleDespesas.resx">
       <DependentUpon>frmControleDespesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedicos.resx">
+      <DependentUpon>frmMedicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMeusContatos.resx">
       <DependentUpon>frmMeusContatos.cs</DependentUpon>
@@ -133,6 +156,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="AgendaContatosMB.xsc">
       <DependentUpon>AgendaContatosMB.xsd</DependentUpon>
@@ -144,6 +168,17 @@
     </None>
     <None Include="AgendaContatosMB.xss">
       <DependentUpon>AgendaContatosMB.xsd</DependentUpon>
+    </None>
+    <None Include="ControleDeConsultorioMB.xsc">
+      <DependentUpon>ControleDeConsultorioMB.xsd</DependentUpon>
+    </None>
+    <None Include="ControleDeConsultorioMB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ControleDeConsultorioMB.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ControleDeConsultorioMB.xss">
+      <DependentUpon>ControleDeConsultorioMB.xsd</DependentUpon>
     </None>
     <None Include="ControleDespesasMBDataSet.xsc">
       <DependentUpon>ControleDespesasMBDataSet.xsd</DependentUpon>
@@ -191,6 +226,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\woman-doctor-background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

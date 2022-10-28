@@ -41,6 +41,7 @@
             this.cAvançadoIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAvançadoIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.controleDeConsultórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +75,7 @@
             this.cIntermediárioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.consultórioToolStripMenuItem,
             this.controleDeAlunosToolStripMenuItem,
+            this.controleDeConsultórioToolStripMenuItem,
             this.atividadesExtrasToolStripMenuItem});
             this.cIntermediárioToolStripMenuItem.Name = "cIntermediárioToolStripMenuItem";
             this.cIntermediárioToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
@@ -82,14 +84,14 @@
             // consultórioToolStripMenuItem
             // 
             this.consultórioToolStripMenuItem.Name = "consultórioToolStripMenuItem";
-            this.consultórioToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.consultórioToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.consultórioToolStripMenuItem.Text = "Consultório";
             this.consultórioToolStripMenuItem.Click += new System.EventHandler(this.consultórioToolStripMenuItem_Click);
             // 
             // controleDeAlunosToolStripMenuItem
             // 
             this.controleDeAlunosToolStripMenuItem.Name = "controleDeAlunosToolStripMenuItem";
-            this.controleDeAlunosToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.controleDeAlunosToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.controleDeAlunosToolStripMenuItem.Text = "Controle de Alunos";
             this.controleDeAlunosToolStripMenuItem.Click += new System.EventHandler(this.controleDeAlunosToolStripMenuItem_Click);
             // 
@@ -99,7 +101,7 @@
             this.controleDeDespesasToolStripMenuItem,
             this.meusContatosAgendaToolStripMenuItem});
             this.atividadesExtrasToolStripMenuItem.Name = "atividadesExtrasToolStripMenuItem";
-            this.atividadesExtrasToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.atividadesExtrasToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.atividadesExtrasToolStripMenuItem.Text = "Atividades Extras";
             // 
             // controleDeDespesasToolStripMenuItem
@@ -141,6 +143,13 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // controleDeConsultórioToolStripMenuItem
+            // 
+            this.controleDeConsultórioToolStripMenuItem.Name = "controleDeConsultórioToolStripMenuItem";
+            this.controleDeConsultórioToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.controleDeConsultórioToolStripMenuItem.Text = "Controle de Consultório";
+            this.controleDeConsultórioToolStripMenuItem.Click += new System.EventHandler(this.controleDeConsultórioToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,6 +185,7 @@
         private System.Windows.Forms.ToolStripMenuItem cAvançadoIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cAvançadoIIToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem controleDeConsultórioToolStripMenuItem;
     }
 }
 

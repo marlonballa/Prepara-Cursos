@@ -40,5 +40,11 @@ namespace ProgramadorCSharp3._0_PreparaCursos
             frmMeusContatos frmMeusContatos = new frmMeusContatos();
             frmMeusContatos.ShowDialog();
         }
+
+        private void controleDeConsultórioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmControleDeConsultorio frmControleDeConsultorio = new frmControleDeConsultorio();
+            frmControleDeConsultorio.ShowDialog();
+        }
     }
 }

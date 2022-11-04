@@ -38,3 +38,10 @@ D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSha
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3.0-PreparaCursos.csproj.CopyComplete
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDeConsultorio.resources
 D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmCadastroMedicos.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmControleDespesas2.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\Correios.Net.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\Correios.Net.pdb
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmPacientes.resources
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\Newtonsoft.Json.dll
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\bin\Debug\Newtonsoft.Json.xml
+D:\Usuario\Desktop\C# - Marlon\Prepara Cursos\Programador C# 3.0\ProgramadorCSharp3.0-PreparaCursos\ProgramadorCSharp3.0-PreparaCursos\obj\Debug\ProgramadorCSharp3._0_PreparaCursos.frmConsultas.resources

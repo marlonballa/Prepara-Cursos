@@ -20,8 +20,19 @@ namespace ProgramadorCSharp3._0_PreparaCursos
         private void cadastrarNovoMédicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCadastroMedicos frmCadastroMedicos = new frmCadastroMedicos();
-            frmCadastroMedicos.MdiParent = this;
             frmCadastroMedicos.Show();
+        }
+
+        private void cadastrarNovoPacienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPacientes frmPacientes = new frmPacientes();
+            frmPacientes.ShowDialog();
+        }
+
+        private void cadastrarNovaConsultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultas frmConsultas = new frmConsultas();
+            frmConsultas.Show();
         }
     }
 }

@@ -31,5 +31,10 @@ namespace ProgramadorCSharp3._0_PreparaCursos
             this.medicoTableAdapter.Fill(this.controleDeConsultorioMB.Medico);
 
         }
+
+        private void btnFecharFrmMedicos_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

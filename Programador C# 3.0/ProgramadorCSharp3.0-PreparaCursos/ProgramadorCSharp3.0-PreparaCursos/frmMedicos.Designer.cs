@@ -51,6 +51,7 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.medicoBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.btnFecharFrmMedicos = new System.Windows.Forms.ToolStripButton();
             this.txtIdentificadorMedico = new System.Windows.Forms.TextBox();
             this._NOME_MEDICOTextBox = new System.Windows.Forms.TextBox();
             this.tELEFONE_MEDICOMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
@@ -153,7 +154,8 @@
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
-            this.medicoBindingNavigatorSaveItem});
+            this.medicoBindingNavigatorSaveItem,
+            this.btnFecharFrmMedicos});
             this.medicoBindingNavigator.Location = new System.Drawing.Point(0, 0);
             this.medicoBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.medicoBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
@@ -260,6 +262,17 @@
             this.medicoBindingNavigatorSaveItem.Text = "Salvar Dados";
             this.medicoBindingNavigatorSaveItem.Click += new System.EventHandler(this.medicoBindingNavigatorSaveItem_Click);
             // 
+            // btnFecharFrmMedicos
+            // 
+            this.btnFecharFrmMedicos.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.btnFecharFrmMedicos.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnFecharFrmMedicos.Image = global::ProgramadorCSharp3._0_PreparaCursos.Properties.Resources.close_icon;
+            this.btnFecharFrmMedicos.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnFecharFrmMedicos.Name = "btnFecharFrmMedicos";
+            this.btnFecharFrmMedicos.Size = new System.Drawing.Size(23, 22);
+            this.btnFecharFrmMedicos.Text = "toolStripButton1";
+            this.btnFecharFrmMedicos.Click += new System.EventHandler(this.btnFecharFrmMedicos_Click);
+            // 
             // txtIdentificadorMedico
             // 
             this.txtIdentificadorMedico.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicoBindingSource, "ID_MEDICO", true));
@@ -359,7 +372,7 @@
             this.dgvMedicos.Location = new System.Drawing.Point(0, 173);
             this.dgvMedicos.Name = "dgvMedicos";
             this.dgvMedicos.RowHeadersVisible = false;
-            this.dgvMedicos.Size = new System.Drawing.Size(974, 308);
+            this.dgvMedicos.Size = new System.Drawing.Size(974, 307);
             this.dgvMedicos.TabIndex = 10;
             // 
             // dataGridViewTextBoxColumn1
@@ -375,7 +388,7 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = " NOME_MEDICO";
             this.dataGridViewTextBoxColumn2.HeaderText = "Nome do Médico";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.Width = 600;
+            this.dataGridViewTextBoxColumn2.Width = 590;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -395,13 +408,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 481);
+            this.ClientSize = new System.Drawing.Size(974, 480);
             this.Controls.Add(this.dgvMedicos);
             this.Controls.Add(this.gbPesquisarMedicos);
             this.Controls.Add(this.gbCadastrarNovoMedico);
             this.Controls.Add(this.medicoBindingNavigator);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmCadastroMedicos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Médicos";
@@ -453,5 +467,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.ToolStripButton btnFecharFrmMedicos;
     }
 }

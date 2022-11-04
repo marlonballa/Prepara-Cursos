@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Correios.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Correios.CEP.Net.1.1.6\lib\Correios.Net.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -41,6 +44,9 @@
     </Reference>
     <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -75,6 +81,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ControleEscolarMBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultas.Designer.cs">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmControleDeAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     <Compile Include="frmControleDespesas.Designer.cs">
       <DependentUpon>frmControleDespesas.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmControleDespesas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmControleDespesas2.Designer.cs">
+      <DependentUpon>frmControleDespesas2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMedicos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +129,12 @@
     <Compile Include="frmMeusContatos.Designer.cs">
       <DependentUpon>frmMeusContatos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes.Designer.cs">
+      <DependentUpon>frmPacientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +143,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultadoCEP.cs" />
     <Compile Include="_Consultorio_2_0DataSet.cs">
       <DependentUpon>_Consultorio_2_0DataSet.xsd</DependentUpon>
     </Compile>
@@ -127,6 +152,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_Consultorio_2_0DataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmConsultas.resx">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmControleDeAluno.resx">
       <DependentUpon>frmControleDeAluno.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,11 +167,17 @@
     <EmbeddedResource Include="frmControleDespesas.resx">
       <DependentUpon>frmControleDespesas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmControleDespesas2.resx">
+      <DependentUpon>frmControleDespesas2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMedicos.resx">
       <DependentUpon>frmMedicos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMeusContatos.resx">
       <DependentUpon>frmMeusContatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientes.resx">
+      <DependentUpon>frmPacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -229,6 +263,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="assets\images\woman-doctor-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\close_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\Contas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\Categorias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\Despesas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\images\next_plan.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

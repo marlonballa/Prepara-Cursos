@@ -35,13 +35,14 @@
             this.cIntermediárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controleDeAlunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDeConsultórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.atividadesExtrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controleDeDespesasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.meusContatosAgendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAvançadoIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cAvançadoIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.controleDeConsultórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.controleDeDespesas20ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -95,11 +96,19 @@
             this.controleDeAlunosToolStripMenuItem.Text = "Controle de Alunos";
             this.controleDeAlunosToolStripMenuItem.Click += new System.EventHandler(this.controleDeAlunosToolStripMenuItem_Click);
             // 
+            // controleDeConsultórioToolStripMenuItem
+            // 
+            this.controleDeConsultórioToolStripMenuItem.Name = "controleDeConsultórioToolStripMenuItem";
+            this.controleDeConsultórioToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.controleDeConsultórioToolStripMenuItem.Text = "Controle de Consultório";
+            this.controleDeConsultórioToolStripMenuItem.Click += new System.EventHandler(this.controleDeConsultórioToolStripMenuItem_Click);
+            // 
             // atividadesExtrasToolStripMenuItem
             // 
             this.atividadesExtrasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.controleDeDespesasToolStripMenuItem,
-            this.meusContatosAgendaToolStripMenuItem});
+            this.meusContatosAgendaToolStripMenuItem,
+            this.controleDeDespesas20ToolStripMenuItem});
             this.atividadesExtrasToolStripMenuItem.Name = "atividadesExtrasToolStripMenuItem";
             this.atividadesExtrasToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
             this.atividadesExtrasToolStripMenuItem.Text = "Atividades Extras";
@@ -143,12 +152,11 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // controleDeConsultórioToolStripMenuItem
+            // controleDeDespesas20ToolStripMenuItem
             // 
-            this.controleDeConsultórioToolStripMenuItem.Name = "controleDeConsultórioToolStripMenuItem";
-            this.controleDeConsultórioToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.controleDeConsultórioToolStripMenuItem.Text = "Controle de Consultório";
-            this.controleDeConsultórioToolStripMenuItem.Click += new System.EventHandler(this.controleDeConsultórioToolStripMenuItem_Click);
+            this.controleDeDespesas20ToolStripMenuItem.Name = "controleDeDespesas20ToolStripMenuItem";
+            this.controleDeDespesas20ToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.controleDeDespesas20ToolStripMenuItem.Text = "Controle de Despesas 2.0";
             // 
             // frmPrincipal
             // 
@@ -186,6 +194,7 @@
         private System.Windows.Forms.ToolStripMenuItem cAvançadoIIToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem controleDeConsultórioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem controleDeDespesas20ToolStripMenuItem;
     }
 }
 

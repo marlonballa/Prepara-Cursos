@@ -34,5 +34,10 @@ namespace ProgramadorCSharp3._0_PreparaCursos
             frmConsultas frmConsultas = new frmConsultas();
             frmConsultas.Show();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
